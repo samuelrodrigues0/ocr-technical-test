@@ -16,7 +16,7 @@ Para executar o projeto, segue o passo a passo:
 
 1.  **Clonar o repositório:**
     ```bash
-    git clone https://github.com/your-repo/ocr-technical-test.git
+    git clone https://github.com/samuelrodrigues0/ocr-technical-test.git
     cd ocr-technical-test
     ```
 
