@@ -10,6 +10,7 @@ Este projeto implementa uma solução para Optical Character Recognition (OCR), 
 *   **Output flexível:** Permitir exibir o texto no console, salvar em arquivo `.txt` ou ambos.
 *   **Suporte para multiplos idiomas:** Extrai textos em portugues e inglês.
 
+
 ## Instalação
 
 Para executar o projeto, segue o passo a passo:
@@ -20,8 +21,8 @@ Para executar o projeto, segue o passo a passo:
     cd ocr-technical-test
     ```
 
-2.  **Instalar o motor Tesseract OCR:**
-    Este projeto utiliza o motor Tesseract OCR. Você precisa instalar separadamente no seu sistema:
+2.  **Instalar Tesseract OCR:**
+    Este projeto utiliza Tesseract OCR. Você precisa instalar separadamente no seu sistema:
 
     *   **Ubuntu/Debian:**
         ```bash
@@ -29,19 +30,15 @@ Para executar o projeto, segue o passo a passo:
         sudo apt install tesseract-ocr
         sudo apt install tesseract-ocr-por tesseract-ocr-eng # Suporte para portugues e pacotes do inglês
         ```
-    *   **macOS (Homebrew):**
-        ```bash
-        brew install tesseract
-        brew install tesseract-lang # Instalando pacotes de linguagem
-        ```
     *   **Windows:**
         Baixa o executavel em [Tesseract OCR GitHub page](https://tesseract-ocr.github.io/tessdoc/Downloads.html). Não esqueça de incluir o Tesseract no seu Path.
 
 3.  **Instalar dependências do Python:**
-    Gerar um ambiente virtual:
+
+    Python3 precisa estar instalado, assim como python3-venv:
 
     ```bash
-    python -m venv .venv
+    python -m venv .venv # ou python3 -m venv .venv
     source .venv/bin/activate # Para windows: `.venv\Scripts\activate`
     pip install -e .
     ```
