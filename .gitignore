@@ -1,0 +1,13 @@
+# Ambientes virtuais
+.venv/
+
+# Arquivos temporários do Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Metadados do setuptools
+*.egg-info/
+
+# Arquivos teste de unidade
+tests/

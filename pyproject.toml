@@ -1,0 +1,10 @@
+[project]
+name = "ocr-tcchnical-test"
+version = "0.1.0"
+description = "Projeto de OCR (Optical Character Recognition) para teste técnico"
+dependencies = [
+    "numpy", 
+    "pytesseract", 
+    "pdf2image", 
+    "opencv-python"
+]
