@@ -11,7 +11,7 @@ Este projeto implementa uma solução para Optical Character Recognition (OCR), 
 *   **Suporte para multiplos idiomas:** Extrai textos em portugues e inglês.
 
 
-## Instalação
+## Instalação - Ubuntu/debian & Windows WSL
 
 Para executar o projeto, segue o passo a passo:
 
@@ -31,15 +31,21 @@ Para executar o projeto, segue o passo a passo:
         sudo apt install tesseract-ocr-por tesseract-ocr-eng # Suporte para portugues e pacotes do inglês
         ```
     *   **Windows:**
-        Baixa o executavel em [Tesseract OCR GitHub page](https://tesseract-ocr.github.io/tessdoc/Downloads.html). Não esqueça de incluir o Tesseract no seu Path.
+        Instalação do Linux WSL é recomendado [Windows WSL](https://learn.microsoft.com/pt-br/windows/wsl/install).
 
 3.  **Instalar dependências do Python:**
 
-    Python3 precisa estar instalado, assim como python3-venv:
+    dependências de pdf2image (normalmente vem por padrão): 
+    
+    ```bash
+    sudo apt-get install -y poppler-utils
+    ```
+
+    Python3 precisa estar instalado, assim como python3-venv e pip:
 
     ```bash
-    python -m venv .venv # ou python3 -m venv .venv
-    source .venv/bin/activate # Para windows: `.venv\Scripts\activate`
+    python3 -m venv .venv
+    source .venv/bin/activate
     pip install -e .
     ```
 
